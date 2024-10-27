@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Player Details Website</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Players</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section class="search-bar d-flex justify-content-center align-items-center gap-3 mb-5">
+      <input id="input-value" class="w-50 p-3" type="text">
+      <i id="search-icon" class="fa-solid fa-magnifying-glass custom-size"></i>
+    </section>
+    <section class="show_deatils">
+      <div class="modal" id="playerModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 id="modal-title" class="modal-title">Player Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p id="modal-text">Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-flex d-lg-flex flex-column flex-lg-row justify-content-around bg-dark-subtle">
+      <section class="col-12 col-lg-8 body-section d-flex flex-column justify-content-around align-items-center border border-2 mb-lg-0 mb-3">
+        <div class="text-center">
+          <div class="PlayerListTitle">
+            <h1 id="player-container-title">Player List</h1>
+          </div>
+          <div id="player-container" class="player-container">
+            <!-- Player Cart Will come here -->
+          </div>
+        </div>
+      </section>
+      <section class="side-cart col-lg-4 col-12">
+        <div class="">
+          <div class="text-center">
+            <h1>Cart Details</h1>
+            <p> Count : <span id="cart-count"> 0 </span> </p>
+          </div>
+          <div>
+            <div id="cart-data"></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <div class="bg-danger-subtle text-center p-5">
+        <p class="socialMedia"> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-facebook"></i> </p>
+        <hr>
+        <small>All Right Reserved by @Khairul Bashar Naeeim 2024</small>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

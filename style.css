@@ -1,0 +1,78 @@
+.img{
+    width: 250px;
+    height: 250px;
+}
+
+.player-container{
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 8px;
+}
+
+.each-player{
+    border: 1px solid #000;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.custom-size{
+    font-size: 50px;
+}
+
+.btn1{
+    padding: 8px;
+    background-color: cornflowerblue;
+    margin-left: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 13px;
+}
+
+.btn2{
+    padding: 8px;
+    background-color: cornflowerblue;
+    margin-left: 10px;
+    width: 80px;
+    border: none;
+    border-radius: 13px;
+}
+
+.btn1:hover, .btn2:hover{
+    background-color: #366cd1;
+    color: #fff;
+}
+
+.btn1:active, .btn2:active{
+    background-color: #366cd1;
+    transform: translateY(2px);
+    color: #fff;
+}
+
+.socialMedia{
+    font-size: 30px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+input{
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(185, 208, 229);
+}
+
+.cart-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img1{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
